@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>{{ page.title }} | {{ site.title }}</title>
+	<meta name="author" content="{{ site.author.name }}" />
+	{% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+
+	<link rel="stylesheet" type="text/css" href="/assets/themes/default/stylesheets/base.css">
+	<link rel="stylesheet" type="text/css" href="/assets/themes/default/stylesheets/layout.css">
+	<link rel="stylesheet" type="text/css" href="/assets/themes/default/stylesheets/skeleton.css">
+	<link rel="stylesheet" type="text/css" href="/assets/themes/default/stylesheets/syntax.css">
+	<link rel="stylesheet" type="text/css" href="/assets/themes/default/stylesheets/custom.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<div class="container">
+
+		<div  class="sixteen columns row heading">
+			<h1><a href="/" title="{{ site.title }}">{{ site.title }}</a></h1>
+			<span>{{ site.subtitle }} </span>
+		</div>
+
+
+		<div class="twelve columns">
+			{{ content }}
+		</div>
+
+		<div class="four columns sidebar">
+			{% include themes/default/sidebar.html %}
+		</div>
+
+		<div  class="sixteen columns row footer">
+			{% include themes/default/footer.html %}
+		</div>
+
+	</div>
+
+</body>
+</html>
