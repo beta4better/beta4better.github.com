@@ -1,5 +1,5 @@
 title: 我的那些花儿 
-subtitle: 你未看此花时,此花与汝同归于寂;你来看此花时,则此花颜色一时明白起来。
+subtitle: "你未看此花时,此花与汝同归于寂;你来看此花时,则此花颜色一时明白起来"
 production_url: http://www.beta4better.me 
 
 author:
@@ -10,14 +10,10 @@ author:
 auto: true
 server_port: 10000
 
-destination: ../public_html
+destination: public_html
 
-permalink: /:year/:month/:title.html
+permalink: /archives/:year/:month/:title.html
 
 markdown: rdiscount
 pygments: true
 
-var:
-  archive_path: /archives.html
-  tags_path : /tags.html
-  rss_path: /atom.xml
