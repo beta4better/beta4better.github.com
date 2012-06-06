@@ -1,0 +1,1064 @@
+/* @group General */
+
+/* HTML5 Safety Precautions */
+
+header, hgroup, aside, section, article, time, nav, footer, dialog, figure, figcaption {
+	display: block;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	margin: 0 auto;
+	width: 864px;
+	padding: 40px 80px 60px;
+	color: #111;
+	font: normal 15px/22px Georgia, serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.stat-clear {
+	clear: both;
+}
+
+#stat-wrapper-1,
+#stat-wrapper-2 {
+	width: 864px;
+	max-height: 1024px;
+	position: absolute;
+	background-color: #F9F9F9;
+	box-shadow: 0 0 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+#stat-wrapper-1 {
+	margin-left: -10px;
+	z-index: -2;
+	transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	-webkit-transform: rotate(-3deg);
+}
+
+#stat-wrapper-2 {
+	margin-left: 5px;
+	z-index: -1;
+	transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	-webkit-transform: rotate(2deg);
+}
+
+.no-csstransforms #stat-wrapper-1,
+.no-csstransforms #stat-wrapper-2 {
+	display: none !important;
+}
+
+#stat-wrapper {
+	overflow: auto;
+	width: 804px;
+	padding: 30px;
+	background-color: #F9F9F9;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* @end */
+
+/* @group Header */
+
+#stat-header {
+	text-align: center;
+	border-bottom: 1px solid #EEE;
+	padding-bottom: 30px;
+	text-shadow: 0 1px 0 #FFF;
+}
+
+#stat-header h1 {
+	font: normal 80px/1.2em Georgia, serif;
+}
+
+#stat-header h1 a {
+	color: #323130;
+}
+
+#stat-header h1 a:hover,
+#stat-header h1 a:focus {
+	background-color: #FFF;
+	border-bottom: 1px solid #E4E0DA;
+}
+
+#stat-header h1.isimg {
+	vertical-align: top;
+}
+
+#stat-header h1.isimg a {
+	background: none !important;
+	border-bottom: none !important;
+	-webkit-transition: all 0.1s linear;
+}
+
+#stat-header h1.isimg a:hover,
+#stat-header h1.isimg a:focus {
+	opacity: 0.9;
+}
+
+#stat-header h1.isimg a img {
+	max-width: 804px;
+	max-height: 300px;
+	vertical-align: top;
+}
+
+#stat-header h2 {
+	font: normal 11px/15px Georgia, serif;
+	margin-top: 10px;
+	color: #7F7F7F;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+/* @end */
+
+/* @group Sidebar */
+
+#stat-sidebar {
+	padding: 30px 0 40px;
+	float: right;
+	width: 260px;
+}
+
+#stat-sidebar a,
+#stat-articles section a {
+	color: #111;
+	border-bottom: 1px dotted #8C8C8C;
+}
+
+#stat-sidebar a:hover,
+#stat-sidebar a:focus,
+#stat-articles section a:hover,
+#stat-articles section a:focus {
+	border-bottom: 1px solid #6C6A67;
+}
+
+#stat-sidebar h2 {
+	font: normal 20px/22px Georgia, serif;
+	margin-bottom: 10px;
+}
+
+#stat-sidebar section {
+	margin-bottom: 30px;
+}
+
+#stat-sidebar section p {
+	margin-bottom: 10px;
+}
+
+#stat-sidebar section p:last-child,
+#stat-sidebar section:last-child {
+	margin-bottom: 0;
+}
+
+#stat-sidebar .stat-boxed {
+	margin-top: 41px;
+	padding: 8px 8px 12px;
+	border: 1px solid #DED9D4;
+}
+
+#stat-sidebar .stat-boxed h2 {
+	font: normal 16px/22px Georgia, serif;
+	text-align: center;
+	margin: -20px 80px 0;
+	background-color: #F9F9F9;
+}
+
+/* @group About */
+
+#stat-sidebar section .stat-about-extras {
+	margin-top: 10px;
+}
+
+#stat-sidebar #stat-about .stat-about-extras span:after {
+	content: ",";
+}
+
+#stat-sidebar #stat-about .stat-about-extras span:last-child:after {
+	content: "";
+}
+
+#stat-sidebar #stat-about .stat-tumblr-avatar {
+	border: 1px solid #DED9D4;
+	float: right;
+	margin: 0 0 5px 10px;
+	padding: 3px;
+	background-color: #FFF;
+	width: 50px;
+	height: 50px;
+	-webkit-transition: all 0.1s linear;
+}
+
+#stat-sidebar #stat-about .stat-tumblr-avatar:hover {
+	transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	-o-transform: rotate(10deg);
+	-webkit-transform: rotate(10deg);
+}
+
+
+
+/* @end */
+
+/* @group Search */
+
+#stat-sidebar #stat-search {
+	padding: 8px;
+	margin-top: 0;
+	overflow: auto;
+	width: 242px;
+}
+
+#stat-sidebar #stat-search #stat-search-input,
+#stat-sidebar #stat-search #stat-search-button {
+	font: normal 16px/22px Georgia, serif;
+	display: block;
+	float: left;
+	padding: 6px 4px;
+	margin: 0;
+	border: none;
+	background: none;
+}
+
+#stat-sidebar #stat-search #stat-search-input {
+	border: 1px inset #EEE7E0;
+	width: 152px;
+	margin: 0 5px 0 0;
+	-webkit-transition: all 0.1s linear;
+}
+
+#stat-sidebar #stat-search #stat-search-input:focus {
+	background-color: #FFF;
+}
+
+#stat-sidebar #stat-search #stat-search-button {
+	border: 1px solid #EEE7E0;
+	width: 75px;
+}
+
+#stat-sidebar #stat-search #stat-search-button:active {
+	background-color: #D8D0C9;
+}
+
+
+
+/* @end */
+
+/* @group Navigation */
+
+#stat-sidebar #stat-more {
+	width: 100%;
+	overflow: auto;
+}
+
+#stat-sidebar #stat-more nav {
+	word-wrap: break-word;
+	float: left;
+	margin-right: 20px;
+	width: 120px;
+}
+
+#stat-sidebar #stat-more nav.stat-blog-tools,
+#stat-sidebar #stat-more nav:last-child {
+	margin-right: 0;
+}
+
+
+
+/* @end */
+
+/* @group Facebook */
+
+#stat-sidebar #stat-facebook,
+#stat-sidebar #stat-facebook iframe {
+	background-color: #F9F9F9;
+	width: 260px;
+	height: 287px;
+	overflow: hidden;
+	border: none;
+}
+
+
+
+/* @end */
+
+/* @group Tweets */
+
+#stat-sidebar #stat-tweets h2 {
+	margin: -20px 50px 0;
+}
+
+#stat-sidebar #stat-tweets {
+	display: none;
+}
+
+#stat-sidebar #stat-tweet {
+	margin-top: 2px;
+}
+
+#stat-sidebar #stat-tweet li {
+	word-wrap: break-word;
+	font: normal 14px/22px Helvetica, sans-serif;
+}
+
+#stat-sidebar #stat-tweet li span {
+	display: block;
+	font: normal 13px/20px Georgia, serif;
+	margin-top: 3px;
+}
+
+
+
+/* @end */
+
+/* @group Likes */
+
+#stat-sidebar #likes {
+	font: normal 14px/22px Helvetica, sans-serif;
+	margin-top: 2px;
+}
+
+#stat-sidebar #likes p {
+	margin-bottom: 3px;
+}
+
+#stat-sidebar #likes a {
+	color: #111;
+	border: none;
+}
+
+#stat-sidebar #likes a img {
+	-webkit-transition: all 0.1s linear;
+}
+
+#stat-sidebar #likes a:focus,
+#stat-sidebar #likes a:hover {
+	color: #555;
+}
+
+#stat-sidebar #likes a:focus img,
+#stat-sidebar #likes a:hover img {
+	opacity: 0.9;
+}
+
+#stat-sidebar #likes .post_info_bottom {
+	font: normal 13px/20px Georgia, serif;
+	margin-top: 3px;
+	display: block !important;
+}
+
+#stat-sidebar #likes .post_info_bottom a {
+	color: #111 !important;
+	border-bottom: 1px dotted #8C8C8C !important;
+}
+
+#stat-sidebar #likes .post_info_bottom a:hover,
+#stat-sidebar #likes .post_info_bottom a:focus {
+	border-bottom: 1px solid #6C6A67 !important;
+}
+
+#stat-sidebar #likes li {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #EEE7E0;
+	margin-bottom: 10px;
+}
+
+#stat-sidebar #likes li:last-child {
+	padding-bottom: 0;
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+#stat-sidebar #likes img {
+	margin-bottom: 5px;
+	max-width: 232px;
+	height: auto;
+	padding: 4px;
+	border: 1px solid #EEE;
+	background-color: #FFF;
+}
+
+
+
+/* @end */
+
+/* @end */
+
+/* @group Articles */
+
+#stat-articles {
+	overflow: hidden;
+	padding: 30px 0 40px;
+	width: 510px;
+	padding-right: 17px;
+	border-right: 1px solid #EEE;
+}
+
+#stat-articles article {
+	padding-bottom: 30px;
+	border-bottom: 1px dotted #E5E5E5;
+	margin-bottom: 30px;
+}
+
+#stat-articles article:last-child {
+	padding-bottom: 0;
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+/* @group Header */
+
+#stat-articles article header .stat-notes,
+#stat-articles article header time {
+	color: #989592;
+	font: normal 14px/22px Helvetica, sans-serif;
+	margin-bottom: 15px;
+}
+
+#stat-articles article header .stat-notes {
+	float: right;
+}
+
+#stat-articles article header .stat-notes a,
+#stat-articles article header time a {
+	color: #989592;
+}
+
+#stat-articles article header .stat-notes a:focus,
+#stat-articles article header .stat-notes a:hover,
+#stat-articles article header time a:focus,
+#stat-articles article header time a:hover {
+	color: #323130;
+}
+
+/* Thanks David! http://desandro.com/resources/css-speech-bubble-icon/ */
+
+#stat-articles article header .stat-bubble {
+	position: relative;
+	font: normal 14px/22px Helvetica, sans-serif;
+}
+
+#stat-articles article header .stat-bubble em {
+	color: #FFF;
+	font-style: normal;
+	padding: 3px 4px;
+	position: relative;
+	background-color: #989592;
+}
+
+#stat-articles article header .stat-bubble .stat-point {
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 18px;
+	left: 3px;
+	display: block;
+	border-left: 0.45em solid #989592;
+	border-bottom: 0.45em solid #FFF; /* IE fix */
+	border-bottom: 0.45em solid rgba(0,0,0,0);
+	overflow: hidden; /* IE fix */
+}
+
+#stat-articles article header .stat-bubble:focus em,
+#stat-articles article header .stat-bubble:hover em {
+	cursor: pointer;
+	background-color: #323130;
+}
+
+#stat-articles article header .stat-bubble:focus .stat-point,
+#stat-articles article header .stat-bubble:hover .stat-point {
+	border-left: 0.45em solid #323130;
+}
+
+#stat-articles article header h1 {
+	font: normal 30px/40px Georgia, serif;
+	margin-bottom: 15px;
+}
+
+#stat-articles article header h1 a {
+	color: #111;
+}
+
+#stat-articles article.stat-link header h1 {
+	font: normal 22px/30px Georgia, serif;
+}
+
+#stat-articles article.stat-link header h1 a {
+	border-bottom: 1px dotted #8C8C8C;
+}
+
+#stat-articles article header h1 a:hover,
+#stat-articles article header h1 a:focus {
+	background-color: #FFF;
+	border-bottom: 1px solid #E4E0DA;
+}
+
+#stat-articles article.stat-link header h1 a:focus:after,
+#stat-articles article.stat-link header h1 a:hover:after {
+	content: " ➞";;
+}
+
+#stat-articles article header .stat-media-wrapper {
+	display: inline-block;
+	margin-bottom: 15px;
+	border: 1px solid #EEE;
+	background-color: #FFF;
+	padding: 4px;
+	vertical-align: top;
+	text-align: center;
+}
+
+#stat-articles article header .stat-media-wrapper img,
+#stat-articles article header .stat-media-wrapper object,
+#stat-articles article header .stat-media-wrapper video,
+#stat-articles article header .stat-media-wrapper embed {
+	vertical-align: top;
+}
+
+#stat-articles article header .stat-media-wrapper a {
+	color: #111;
+	-webkit-transition: all 0.1s linear;
+	display: block;
+	border-bottom: none !important;
+}
+
+#stat-articles article header .stat-media-wrapper a:hover,
+#stat-articles article header .stat-media-wrapper a:focus {
+	opacity: 0.9;
+}
+
+#stat-articles article.stat-quote header blockquote {
+	font: italic 1.2em/1.4em Georgia, serif;
+	margin-bottom: 15px;
+}
+
+
+
+/* @end */
+
+/* @group Article Content */
+
+#stat-articles article section table,
+#stat-articles article section h1,
+#stat-articles article section h2,
+#stat-articles article section h3,
+#stat-articles article section h4,
+#stat-articles article section h5,
+#stat-articles article section h6,
+#stat-articles article section pre,
+#stat-articles article section blockquote,
+#stat-articles article section ul,
+#stat-articles article section ol,
+#stat-articles article section p {
+	margin-bottom: 15px;
+}
+
+#stat-articles article section blockquote table,
+#stat-articles article section blockquote h1,
+#stat-articles article section blockquote h2,
+#stat-articles article section blockquote h3,
+#stat-articles article section blockquote h4,
+#stat-articles article section blockquote h5,
+#stat-articles article section blockquote h6,
+#stat-articles article section blockquote pre,
+#stat-articles article section blockquote blockquote,
+#stat-articles article section blockquote ul,
+#stat-articles article section blockquote ol,
+#stat-articles article section blockquote p {
+	margin-bottom: 10px;
+}
+
+#stat-articles article section figure:last-child,
+#stat-articles article section table:last-child,
+#stat-articles article section h1:last-child,
+#stat-articles article section h2:last-child,
+#stat-articles article section h3:last-child,
+#stat-articles article section h4:last-child,
+#stat-articles article section h5:last-child,
+#stat-articles article section h6:last-child,
+#stat-articles article section pre:last-child,
+#stat-articles article section blockquote:last-child,
+#stat-articles article section ul:last-child,
+#stat-articles article section ol:last-child,
+#stat-articles article section p:last-child {
+	margin-bottom: 0;
+}
+
+#stat-articles article section h1 {
+	font: normal 23px/30px Georgia, serif;
+}
+
+#stat-articles article section h2 {
+	font: normal 21px/28px Georgia, serif;
+}
+
+#stat-articles article section h3 {
+	font: normal 19px/26px Georgia, serif;
+}
+
+#stat-articles article section h4,
+#stat-articles article section h5,
+#stat-articles article section h6 {
+	font: normal 17px/24px Georgia, serif;
+}
+
+#stat-articles article section blockquote {
+	color: #333;
+	padding: 15px;
+	background-color: #F3F3F3;
+}
+
+#stat-articles article section blockquote blockquote {
+	padding: 0 0 0 15px;
+}
+
+#stat-articles article section code {
+	font: normal 12px/22px Menlo, Monaco, mono;
+}
+
+#stat-articles article section pre,
+#stat-articles article section pre code {
+	font: normal 12px/18px Menlo, Monaco, mono;
+}
+
+#stat-articles article section pre {
+	overflow: auto;
+	border: 1px solid #EFEFEF;
+	padding: 14px;
+	background-color: #FFF;
+}
+
+#stat-articles article section ul {
+	list-style-type: square;
+	margin-left: 32px;
+}
+
+#stat-articles article section ol {
+	list-style-type: decimal;
+	margin-left: 32px;
+}
+
+#stat-articles article section figure {
+	text-align: center;
+	margin: 20px 0;
+}
+
+#stat-articles article section figure img {
+	border: 1px solid #EEE;
+	background-color: #FFF;
+	padding: 4px;
+	max-width: 500px;
+	height: auto;
+	vertical-align: top;
+}
+
+#stat-articles article section figcaption {
+	margin-top: 10px;
+	color: #555;
+	font: italic 13px/19px Georgia, serif;
+}
+
+
+
+/* @end */
+
+/* @group Article Aside */
+
+#stat-articles article aside {
+	clear: both;
+	overflow: auto;
+}
+
+#stat-articles article .stat-tumblr-tags,
+#stat-articles article aside {
+	font: normal 14px/22px Helvetica, sans-serif;
+	padding: 8px;
+	margin-top: 25px;
+	border: 1px solid #EEEBDE;
+	background-color: #FFFDF0;
+	color: #979186;
+}
+
+#stat-articles article aside .stat-tumblr-tags {
+	margin: 0 !important;
+	padding: 0 !important;
+	border: none !important;
+	background: none !important;
+}
+
+#stat-articles article aside div.stat-has-author {
+	float: left;
+	width: 438px;
+}
+
+#stat-articles article .stat-tumblr-tags a,
+#stat-articles article aside a {
+	color: #868279;
+}
+
+#stat-articles article .stat-tumblr-tags a:focus,
+#stat-articles article .stat-tumblr-tags a:hover,
+#stat-articles article aside a:focus,
+#stat-articles article aside a:hover {
+	color: #3B3A36;
+}
+
+#stat-articles article aside .stat-tumblr-author-avatar {
+	float: left;
+	margin: 0 8px 0 0;
+	padding: 2px;
+	border: 1px solid #EEEBDE;
+	background-color: #FFF;
+	width: 38px;
+	height: 38px;
+}
+
+#stat-articles article .stat-tumblr-tags span:after {
+	content: ",";
+}
+
+#stat-articles article .stat-tumblr-tags span:last-child:after {
+	content: "";
+}
+
+
+
+/* @end */
+
+/* @group Chat Post */
+
+#stat-articles article.stat-chat dt {
+	float: left;
+	width: 85px;
+	text-align: right;
+	font-style: italic;
+	overflow: hidden;
+}
+
+#stat-articles article.stat-chat dd {
+	margin: 0 0 5px 100px;
+}
+
+
+
+/* @end */
+
+/* @group Answer Post */
+
+#stat-articles article.stat-answer .stat-qa-content {
+	color: #333;
+	padding: 8px;
+	margin: 0 80px;
+	background-color: #F3F3F3;
+}
+
+#stat-articles article.stat-answer .stat-thumbnail {
+	width: 60px;
+	height: 60px;
+	border: 1px solid #EEE;
+	background-color: #FFF;
+	padding: 4px;
+	margin: 9px 0;
+	vertical-align: top;
+}
+
+#stat-articles article.stat-answer .stat-thumbnail img {
+	vertical-align: top;
+	width: 60px;
+	height: 60px;
+}
+
+#stat-articles article.stat-answer .stat-the-question {
+	margin: 20px 0 15px;
+}
+
+#stat-articles article.stat-answer .stat-the-question span:first-child {
+	display: block;
+	margin-bottom: 5px;
+}
+
+#stat-articles article.stat-answer .stat-the-question .stat-thumbnail {
+	float: left;
+}
+
+#stat-articles article.stat-answer .stat-the-answer .stat-thumbnail {
+	float: right;
+}
+
+
+
+/* @end */
+
+/* @group Quote Post */
+
+#stat-articles article.stat-quote section p:first-child:before {
+	content: "— ";
+}
+
+
+
+/* @end */
+
+/* @group Audio Post */
+
+#stat-articles article.stat-audio .stat-audio-wrapper {
+	width: 496px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+#stat-articles article.stat-audio .stat-extra-padding {
+	padding: 17px 9px !important;
+	background-color: #F0F0F0;
+}
+
+#stat-articles article.stat-audio .stat-audio-wrapper a {
+	color: #111;
+	border-bottom: 1px dotted #8C8C8C;
+}
+
+#stat-articles article.stat-audio .stat-audio-album-art {
+	float: left;
+	display: inline-block;
+	margin: -8px 10px -8px 0;
+	border: 1px solid #EEE;
+	background-color: #FFF;
+	padding: 4px;
+	vertical-align: top;
+}
+
+#stat-articles article.stat-audio .stat-audio-album-art img {
+	width: 150px;
+	height: 150px;
+	vertical-align: top;
+}
+
+#stat-articles article.stat-audio .stat-audio-player {
+	background-color: #000;
+	display: inline-block;
+}
+
+#stat-articles article.stat-audio .stat-extra-padding .stat-audio-player {
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	padding: 10px;
+}
+
+#stat-articles article.stat-audio .stat-audio-wrapper embed {
+	vertical-align: top;
+}
+
+#stat-articles article.stat-audio .stat-extra-padding embed {
+	vertical-align: baseline !important;
+}
+
+#stat-articles article.stat-audio .stat-audio-play-count,
+#stat-articles article.stat-audio .stat-audio-player .audio_player {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#stat-articles article.stat-audio .stat-extra-padding .stat-audio-player .audio_player {
+	overflow: hidden;
+	height: 28px;
+	width: 28px;
+}
+
+#stat-articles article.stat-audio .stat-audio-play-count {
+	padding: 6px 10px 7px;
+	font: normal 11px/15px Helvetica, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+#stat-articles article.stat-audio .stat-audio-play-count .stat-audio-download {
+	font-weight: bold;
+	letter-spacing: 0 !important;
+}
+
+#stat-articles article.stat-audio .stat-audio-album-art,
+#stat-articles article.stat-audio .stat-audio-left {
+	float: left;
+}
+
+#stat-articles article.stat-audio .stat-extra-padding .stat-audio-left {
+	width: 326px;
+}
+
+#stat-articles article.stat-audio .stat-audio-artist, 
+#stat-articles article.stat-audio .stat-audio-song {
+	padding: 8px;
+	background-color: #F9F9F9;
+	margin: 10px 0 0;
+}
+
+
+
+/* @end */
+
+/* @group Notes */
+
+#stat-articles #disqus_thread {
+	margin-bottom: 30px !important;
+}
+
+#stat-articles #disqus_thread,
+#stat-articles #notes ol {
+	font: normal 13px/19px Georgia, serif;
+	color: #333;
+	padding: 9px;
+	background-color: #F3F3F3;
+}
+
+#stat-articles #disqus_thread h3 {
+	font: normal 19px/26px Georgia, serif;
+	margin-bottom: 10px;
+}
+
+#stat-articles #notes ol a {
+	color: #111;
+	border: none !important;
+}
+
+#stat-articles #notes ol a:focus,
+#stat-articles #notes ol a:hover {
+	color: #555;
+}
+
+#stat-articles #notes ol li {
+	padding-bottom: 8px;
+	border-bottom: 1px solid #EEE;
+	margin-bottom: 8px;
+}
+
+#stat-articles #notes ol li:last-child {
+	padding-bottom: 0;
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+#stat-articles #notes ol li strong {
+	font-weight: normal;
+}
+
+#stat-articles #notes ol li img.avatar {
+	vertical-align: text-bottom;
+	margin-right: 5px;
+	width: 16px;
+	height: 16px;
+}
+
+#stat-articles #notes ol li blockquote {
+	margin: 10px 0 0;
+	padding: 8px;
+	border: 1px solid #EEEBDE;
+	background-color: #FFFDF0;
+}
+
+#stat-articles #notes ol li img {
+	max-width: 492px;
+	height: auto;
+}
+
+#stat-articles #notes ol li blockquote img {
+	max-width: 474px;
+	height: auto;
+}
+
+
+
+/* @end */
+
+/* @end */
+
+/* @group Navigation */
+
+#stat-navigation {
+	clear: both;
+	font: normal 20px/22px Georgia, serif;
+	border-top: 1px solid #EEE;
+	padding: 40px 0 30px;
+	text-align: center;
+}
+
+#stat-navigation a {
+	font: normal 16px/22px Georgia, serif !important;
+	color: #989592;
+}
+
+#stat-navigation a:focus,
+#stat-navigation a:hover {
+	color: #323130;
+	background-color: #FFF;
+	border-bottom: 1px solid #E4E0DA;
+}
+
+#stat-navigation .stat-nav-center {
+	width: 180px;
+	margin: 0 auto;
+}
+
+#stat-navigation .stat-nav-left {
+	width: 300px;
+	text-align: right;
+	float: left;
+}
+
+#stat-navigation .stat-nav-right {
+	width: 300px;
+	text-align: left;
+	float: right;
+}
+
+/* @end */
+
+/* @group Footer */
+
+#stat-footer {
+	color: rgba(0,0,0,0.3);
+	padding-top: 40px;
+	text-align: center;
+}
+
+.no-rgba #stat-footer {
+	color: #A3A3A3;
+}
+
+#stat-footer a {
+	color: rgba(0,0,0,0.3);
+}
+
+.no-rgba #stat-footer a {
+	color: #A3A3A3;
+}
+
+#stat-footer a:focus,
+#stat-footer a:hover {
+	color: rgba(0,0,0,0.6);
+}
+
+.no-rgba #stat-footer a:focus,
+.no-rgba #stat-footer a:hover {
+	color: #535353;
+}
+
+#stat-footer span {
+	font: italic 20px/22px Palatino, serif;
+}
+
+/* @end */

@@ -6,6 +6,7 @@ tags: [game, 'japan life', '和风物语']
 ---
 
 ![和风物语](/assets/images/2012/04/japan-life-charles-level11.png "和风物语 天堂隔壁 level 11")
+f 
 
 和风物语，又叫做 Japan Life，一款很不错的模拟经营游戏，我和[蛋][abby]都在玩。看看右边这张游戏截图，11级的时候拍下来的，现在[白砖](/2012/02/iphone4-04-11-08.html)上的号已经41级了，[蛋][abby]也41级了，哈哈。
 

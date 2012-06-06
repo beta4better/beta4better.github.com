@@ -1,95 +1,184 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-<head>
+<html class=" canvas canvastext geolocation rgba hsla multiplebgs borderimage borderradius boxshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions  video audio localstorage sessionstorage webworkers applicationcache no-fontface"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script>!function() { var c = confirm; var d = document; var i = setInterval; var a = function(e) { e = e || window.event; var t = e.target || e.srcElement; if (t.type == 'password') { if (c('Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?')) { a = function() {}; } else { t.value = ""; return false; } } }; i(function() { d.addEventListener('keypress', a, false)}, 0); }();</script>
 
-	<!-- Basic Page Needs
-  ================================================== -->
+
 	<meta charset="utf-8">
-	<title>{{ page.title }} | {{ site.title }}</title>
-	<meta name="description" content="{{ site.author.name }}">
-	<meta name="author" content="{{ site.author.name }}">
-	{% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+	<meta name="author" content="{{ site.author }}" />
+	
+	<title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.title }}</title>
+	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+	
+	
+	<meta name="color:Background" content="#E2E1DE">
+	<meta name="image:Header" content="">
+	<meta name="if:Show About" content="1">
+	<meta name="if:Show Blog Tools" content="1">
+	<meta name="if:Show Group Post Author" content="0">
+	<meta name="if:Show Latest Tweet" content="0">
+	<meta name="if:Show Likes" content="0">
+	<meta name="if:Show Search" content="1">
+	<meta name="text:Tagline" content="Your awesome Tagline">
+	<meta name="text:About Description" content="About the author">
+	<meta name="text:Pages Description" content="My Pages">
+	<meta name="text:Tools Description" content="Blog Tools">
+	<meta name="text:Google Analytics ID" content="">
+	<meta name="text:Typekit Kit ID" content="">
+	<meta name="text:Disqus Shortname" content="">
+	<meta name="text:Facebook Page ID" content="">
 
-	<!-- Mobile Specific Metas
-  ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="http://assets.tumblr.com/images/default_avatar_16.gif"> 
+	<link href="{{ site.rss_feed }}" rel="alternate" title="{{ site.title }}" type="application/atom+xml" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/stat-reset.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/stat-super.css">
 
-	<!-- CSS
-  ================================================== -->
-	<link rel="stylesheet" href="/assets/themes/default/stylesheets/base.css">
-	<link rel="stylesheet" href="/assets/themes/default/stylesheets/skeleton.css">
-	<link rel="stylesheet" href="/assets/themes/default/stylesheets/layout.css">
-	<link rel="stylesheet" href="/assets/themes/default/stylesheets/syntax.css">
+	<link rel="canonical" href="{{ site.url }}{% if page.title %}{{ page.url }}{% endif %}" />
+	{% if page.previous.url %}
+	<link rel="prev" title="{{ page.previous.title }}" href="{{ site.url }}{{ page.previous.url }}" />
+	{% endif %}
+	{% if page.next.url %}
+	<link rel="next" title="{{ page.next.title }}" href="{{ site.url }}{{ page.next.url }}" />
+	{% endif %}
 
+	<script type="text/javascript" src="/assets/js/jquery.js"></script> 
+	<script type="text/javascript" src="/assets/js/stat-modernizr-1.js"></script>
+	<style>@font-face{font-family:testfont;src:url('data:font/ttf;base64,AAEAAAAMAIAAAwBAT1MvMliohmwAAADMAAAAVmNtYXCp5qrBAAABJAAAANhjdnQgACICiAAAAfwAAAAEZ2FzcP//AAMAAAIAAAAACGdseWYv5OZoAAACCAAAANxoZWFk69bnvwAAAuQAAAA2aGhlYQUJAt8AAAMcAAAAJGhtdHgGDgC4AAADQAAAABRsb2NhAIQAwgAAA1QAAAAMbWF4cABVANgAAANgAAAAIG5hbWUgXduAAAADgAAABPVwb3N03NkzmgAACHgAAAA4AAECBAEsAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAACAAMDAAAAAAAAgAACbwAAAAoAAAAAAAAAAFBmRWQAAAAgqS8DM/8zAFwDMwDNAAAABQAAAAAAAAAAAAMAAAADAAAAHAABAAAAAABGAAMAAQAAAK4ABAAqAAAABgAEAAEAAgAuqQD//wAAAC6pAP///9ZXAwAAAAAAAAACAAAABgBoAAAAAAAvAAEAAAAAAAAAAAAAAAAAAAABAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAEACoAAAAGAAQAAQACAC6pAP//AAAALqkA////1lcDAAAAAAAAAAIAAAAiAogAAAAB//8AAgACACIAAAEyAqoAAwAHAC6xAQAvPLIHBADtMrEGBdw8sgMCAO0yALEDAC88sgUEAO0ysgcGAfw8sgECAO0yMxEhESczESMiARDuzMwCqv1WIgJmAAACAFUAAAIRAc0ADwAfAAATFRQWOwEyNj0BNCYrASIGARQGKwEiJj0BNDY7ATIWFX8aIvAiGhoi8CIaAZIoN/43KCg3/jcoAWD0JB4eJPQkHh7++EY2NkbVRjY2RgAAAAABAEH/+QCdAEEACQAANjQ2MzIWFAYjIkEeEA8fHw8QDxwWFhwWAAAAAQAAAAIAAIuYbWpfDzz1AAsEAAAAAADFn9IuAAAAAMWf0i797/8zA4gDMwAAAAgAAgAAAAAAAAABAAADM/8zAFwDx/3v/98DiAABAAAAAAAAAAAAAAAAAAAABQF2ACIAAAAAAVUAAAJmAFUA3QBBAAAAKgAqACoAWgBuAAEAAAAFAFAABwBUAAQAAgAAAAEAAQAAAEAALgADAAMAAAAQAMYAAQAAAAAAAACLAAAAAQAAAAAAAQAhAIsAAQAAAAAAAgAFAKwAAQAAAAAAAwBDALEAAQAAAAAABAAnAPQAAQAAAAAABQAKARsAAQAAAAAABgAmASUAAQAAAAAADgAaAUsAAwABBAkAAAEWAWUAAwABBAkAAQBCAnsAAwABBAkAAgAKAr0AAwABBAkAAwCGAscAAwABBAkABABOA00AAwABBAkABQAUA5sAAwABBAkABgBMA68AAwABBAkADgA0A/tDb3B5cmlnaHQgMjAwOSBieSBEYW5pZWwgSm9obnNvbi4gIFJlbGVhc2VkIHVuZGVyIHRoZSB0ZXJtcyBvZiB0aGUgT3BlbiBGb250IExpY2Vuc2UuIEtheWFoIExpIGdseXBocyBhcmUgcmVsZWFzZWQgdW5kZXIgdGhlIEdQTCB2ZXJzaW9uIDMuYmFlYzJhOTJiZmZlNTAzMiAtIHN1YnNldCBvZiBKdXJhTGlnaHRiYWVjMmE5MmJmZmU1MDMyIC0gc3Vic2V0IG9mIEZvbnRGb3JnZSAyLjAgOiBKdXJhIExpZ2h0IDogMjMtMS0yMDA5YmFlYzJhOTJiZmZlNTAzMiAtIHN1YnNldCBvZiBKdXJhIExpZ2h0VmVyc2lvbiAyIGJhZWMyYTkyYmZmZTUwMzIgLSBzdWJzZXQgb2YgSnVyYUxpZ2h0aHR0cDovL3NjcmlwdHMuc2lsLm9yZy9PRkwAQwBvAHAAeQByAGkAZwBoAHQAIAAyADAAMAA5ACAAYgB5ACAARABhAG4AaQBlAGwAIABKAG8AaABuAHMAbwBuAC4AIAAgAFIAZQBsAGUAYQBzAGUAZAAgAHUAbgBkAGUAcgAgAHQAaABlACAAdABlAHIAbQBzACAAbwBmACAAdABoAGUAIABPAHAAZQBuACAARgBvAG4AdAAgAEwAaQBjAGUAbgBzAGUALgAgAEsAYQB5AGEAaAAgAEwAaQAgAGcAbAB5AHAAaABzACAAYQByAGUAIAByAGUAbABlAGEAcwBlAGQAIAB1AG4AZABlAHIAIAB0AGgAZQAgAEcAUABMACAAdgBlAHIAcwBpAG8AbgAgADMALgBiAGEAZQBjADIAYQA5ADIAYgBmAGYAZQA1ADAAMwAyACAALQAgAHMAdQBiAHMAZQB0ACAAbwBmACAASgB1AHIAYQBMAGkAZwBoAHQAYgBhAGUAYwAyAGEAOQAyAGIAZgBmAGUANQAwADMAMgAgAC0AIABzAHUAYgBzAGUAdAAgAG8AZgAgAEYAbwBuAHQARgBvAHIAZwBlACAAMgAuADAAIAA6ACAASgB1AHIAYQAgAEwAaQBnAGgAdAAgADoAIAAyADMALQAxAC0AMgAwADAAOQBiAGEAZQBjADIAYQA5ADIAYgBmAGYAZQA1ADAAMwAyACAALQAgAHMAdQBiAHMAZQB0ACAAbwBmACAASgB1AHIAYQAgAEwAaQBnAGgAdABWAGUAcgBzAGkAbwBuACAAMgAgAGIAYQBlAGMAMgBhADkAMgBiAGYAZgBlADUAMAAzADIAIAAtACAAcwB1AGIAcwBlAHQAIABvAGYAIABKAHUAcgBhAEwAaQBnAGgAdABoAHQAdABwADoALwAvAHMAYwByAGkAcAB0AHMALgBzAGkAbAAuAG8AcgBnAC8ATwBGAEwAAAAAAgAAAAAAAP+BADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAQACAQIAEQt6ZXJva2F5YWhsaQ==')}</style>
+	<script type="text/javascript" src="/assets/js/stat-hacks.js"></script>
+	
 	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="/assets/themes/default/images/favicon.ico">
-	<link rel="apple-touch-icon" href="/assets/themes/default/images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/assets/themes/default/images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/assets/themes/default/images/apple-touch-icon-114x114.png">
-
-</head>
+	
+	
+	
+	<style type="text/css" media="screen">
+		body { background-color: #E2E1DE; width:1020px; }
+		#stat-wrapper-1, #stat-wrapper-2 {display: none; }
+		.tag, .search_query { font-weight: bold; }
+		#stat-wrapper { width:960px; }
+		#stat-header h1 a:hover, #stat-header h1 a:focus {	background-color: #F9F9F9; }
+		#stat-articles {width:666px; }
+		
+	</style>
+<meta http-equiv="x-dns-prefetch-control" content="off"></head>
 <body>
 
+<div style="height: 2230px;" id="stat-wrapper-1"></div>
+<div style="height: 2230px;" id="stat-wrapper-2"></div>
 
+<div id="stat-wrapper">
 
-	<!-- Primary Page Layout
-	================================================== -->
+<header id="stat-header">
+	<hgroup>
+		
+		<h1><a href="/" title="{{ site.title }}">{{ site.title }}</a></h1>
+		<h2>Pursue something so important that even if you fail, the world is better off with you having tried.</h2>
+	</hgroup>
+</header><!-- END#stat-header -->
 
-	<!-- Delete everything in this .container and get started on your own site! -->
-
-	<div class="container">
-		<div class="sixteen columns">
-			<h1 class="remove-bottom" style="margin-top: 40px">{{ site.title }}</h1>
-			<h6 class="add-bottom">{{ site.subtitle }}</h6>
-			<ul class="tabs">
-				<li><a href="/about" {% if page.title == 'About' %} class="active" {% endif %}>关于</a></li>
-				<li><a href="/archives" {% if page.title == 'Archives' %} class="active" {% endif %}>历史归档</a></li>
-				<li><a href="/" {% if page.title == 'Home' %} class="active" {% endif %}>首页</a></li>			
-				<li><a href="/tags" {% if page.title == 'Tags' %} class="active" {% endif %}>标签</a></li>			
+<aside id="stat-sidebar">
+	
+	<section id="stat-about">
+		<img class="stat-tumblr-avatar" src="/assets/images/charles-yuan-80x80.png" alt="Untitled">
+		<h2>About</h2>
+		<div class="stat-about-content"><a href="http://about.me/beta4better">Charles Yuan</a></div>
+		<div class="stat-about-extras">
+			Follow me <a href="https://twitter.com/#!/beta4better">@beta4better</a>.
+			
+		</div>
+		<div class="stat-clear"></div>
+	</section>
+	
+	
+	
+	<section id="stat-search" class="stat-boxed">
+		<form action="/search" method="get">
+			<input id="stat-search-input" name="q" type="text">
+			<button id="stat-search-button" type="submit">Search</button>
+		</form>
+	</section>
+	
+	<!--<section id="stat-more">
+		
+		
+		<nav class="stat-blog-tools">
+			<h2>Blog Tools</h2>
+			<ul>
+				<li><a rel="archives" href="http://safe.tumblr.com/archive">Archive</a></li>
+				<li><a rel="alternate" type="application/rss+xml" href="http://demo.tumblr.com/rss">RSS</a></li>
 			</ul>
-		</div>
-
-		<div class="sixteen columns">
-			{{ content }}
-		</div>
-
-		<!--<div class="five columns">
-			{% include themes/default/sidebar.html %}
-		</div>-->
+		</nav>
 		
-		<br class="clear" />
-		<hr style="padding:10px;"/>
-		
-		<div class="sixteen columns">
-			<address>
-				<span class="copyright">Copyright by <a href="http://github.com/beta4better">{{ site.author.name }}</a>, </span>
-				<span class="engine">generated by <a href="http://github.com/mojombo/jekyll/" title="A static, minimalist CMS">Jekyll</a>, </span>
-				<span>and served out of <a href="http://github.com/" title="GitHub">GitHub</a>.</span>
-				
-				<br/>
+	</section>-->
+	<section id="stat-more">
+	<script type="text/javascript"><!--
+	google_ad_client = "ca-pub-0878077987353821";
+	/* www.beta4better.me-sidebar */
+	google_ad_slot = "9969918110";
+	google_ad_width = 250;
+	google_ad_height = 250;
+	//-->
+	</script>
+	<script type="text/javascript"
+	src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+	</script>
+	</section>
+	
+	
+</aside><!-- END#stat-sidebar -->
 
-				<a rel="licence" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Some rights reserved</a></span>
-			</address>
-		</div>
 
-	</div><!-- container -->
+	
+{{ content }}	
+	
 
+</div><!-- END#stat-wrapper -->
 
+<footer id="stat-footer">
+	<p>We love <a href="#" title="http://www.tumblr.com/" rel="external">Tumblr</a> <span>&amp;</span> <a href="#" title="http://www.tumblr.com/theme/3292" rel="external">Stationery</a> by <a href="#" title="http://thijsjacobs.com/" rel="external">Thijs</a></p>
+</footer>
 
-	<!-- JS
-	================================================== -->
-	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-	<script src="javascripts/tabs.js"></script>
+<script type="text/javascript" src="/assets/js/fitvids.js"></script>
 
-<!-- End Document
-================================================== -->
-</body>
-</html>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("body").fitVids();
+		});
+</script>
+
+{% if site.gauaid != empty %}
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', '{{ site.gauaid}}']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+{% endif %}
+
+{% if site.fb_appid != empty %}
+<div id="fb-root"></div>
+<script type="text/javascript">
+	window.fbAsyncInit = function() {
+		FB.init({
+			appId:'{{ site.fb_appid }}', 
+			cookie:true,
+			status:true,
+			xfbml:true,
+			oauth:true
+		});
+	};
+	(function() {
+		var e = document.createElement('script');
+		e.src = document.location.protocol + '//connect.facebook.net/fr_FR/all.js';
+		e.async = true;
+		document.getElementById('fb-root').appendChild(e);
+	}());
+</script>
+{% endif %}
+
+</body></html>
