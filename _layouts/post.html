@@ -8,17 +8,22 @@ layout: default
 	<article class="stat-text" id="post-232">
 		<header>
 			
-			<p class="stat-notes"><a class="stat-bubble" href="#"><span class="stat-point"></span><em>permalink</em></a></p>
-			<time datetime="{{ post.date | date: "%d %b %Y" }}" pubdate=""><a rel="bookmark" href="#">{{ page.date | date: "%d %b %Y" }}</a></time>
+			<p class="stat-notes"><a class="stat-bubble" href="{{page.url}}"><span class="stat-point"></span><em>permalink</em></a></p>
+			<time datetime="{{ page.date }}" pubdate=""><a rel="bookmark" href="#">{{ page.date }}</a></time>
 			
-			<h1><a rel="bookmark" href="#">{{ page.title }}</a></h1>
+			{% if page.title %} <h1>{{ page.title }}</h1> {% endif %}
 		</header>
 		<section>
 			{{ content }}
 		</section>
 		<div class="stat-clear"></div>
 		
-		<p class="stat-tumblr-tags">Filed under <a href="#" title="http://demo.tumblr.com/tagged/wisdom">{{page.tags[1]}}</a><span></span> </p>		 
+		<p class="stat-tumblr-tags">
+
+			Tag with: {% for tag in page.tags %}{{tag}}<span></span>{% endfor %}
+
+		</p>
+		
 		
 	</article>
 	
