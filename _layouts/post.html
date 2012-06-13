@@ -7,9 +7,7 @@ layout: default
 	
 	<article class="stat-text" id="post-232">
 		<header>
-			
-			<p class="stat-notes"><a class="stat-bubble" href="{{page.url}}"><span class="stat-point"></span><em>permalink</em></a></p>
-			<time datetime="{{ page.date }}" pubdate=""><a rel="bookmark" href="#">{{ page.date }}</a></time>
+			<time datetime="{{ page.date }}" pubdate="">{{ page.date }}</time>
 			
 			{% if page.title %} <h1>{{ page.title }}</h1> {% endif %}
 		</header>
@@ -18,12 +16,13 @@ layout: default
 		</section>
 		<div class="stat-clear"></div>
 		
+		{% if page.tags[0] %}
 		<p class="stat-tumblr-tags">
 
 			Tag with: {% for tag in page.tags %}{{tag}}<span></span>{% endfor %}
 
 		</p>
-		
+		{% endif %}
 		
 	</article>
 	
