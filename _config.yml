@@ -5,7 +5,7 @@ auto: true
 permalink: /:year/:month/:title.html
 pygments: true
 #lsi: true
-paginate: 9
+paginate: 6
 markdown: rdiscount
 rdiscount
   extensions: [smart]

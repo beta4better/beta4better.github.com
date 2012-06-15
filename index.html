@@ -1,22 +1,47 @@
 ---
-layout: home
+layout: default
 ---
 
-{% for post in paginator.posts %}
 
-<article class="stat-text" id="post-232">
-	<header>
-		<p class="stat-notes"><a class="stat-bubble" href="{{ post.url }}"><span class="stat-point"></span><em>permalink</em></a></p>
-		<time datetime="{{ post.date }}" pubdate="">{{ post.date }}</time>
+<section id="stat-articles">
+	
+
+	{% for post in paginator.posts %}
+
+	<article class="stat-text" id="post-232">
+		<header>
+			<p class="stat-notes"><a class="stat-bubble" href="{{ post.url }}"><span class="stat-point"></span><em>permalink</em></a></p>
+			<time datetime="{{ post.date }}" pubdate="">{{ post.date }}</time>
+			
+			{% if post.title %}<h1>{{ post.title }}</h1>{% endif %}
+		</header>
 		
-		{% if post.title %}<h1>{{ post.title }}</h1>{% endif %}
-	</header>
-	
-	<section>
-		{{ post.content }}
-	</section>
-	<div class="stat-clear"></div>
-	
-</article>
+		<section>
+			{{ post.content }}
+		</section>
+		<div class="stat-clear"></div>
+		
+	</article>
 
-{% endfor %}
+	{% endfor %}
+	
+</section><!-- END#stat-articles -->
+
+
+<nav id="stat-navigation">
+	<ul>
+		<li class="stat-nav-left">
+		{% if paginator.previous_page %}
+			<a href="/page{{paginator.previous_page}}">Previous page</a>
+		{% else %}
+			<a href="/">Home</a>
+		{% endif %}
+		</li>
+		<li class="stat-nav-right">
+		{% if paginator.next_page %}
+			<a href="/page{{paginator.next_page}}" class="next ">Next page</a>
+		{% endif %}
+		</li>
+		<li class="stat-nav-center">Page: {{paginator.page}} of {{paginator.total_pages}}</li>
+	</ul>
+</nav><!-- END#stat-navigation -->
