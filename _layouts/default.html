@@ -52,24 +52,50 @@
 	
 	
 	<style type="text/css" media="screen">
-		body { background-color: #E2E1DE; width:1020px; }
-		#stat-wrapper-1, #stat-wrapper-2 {display: none; }
+		body { background-color: #E2E1DE; }
 		.tag, .search_query { font-weight: bold; }
-		#stat-wrapper { width:960px; background-color: #FFFFFF;}
-		#stat-articles {width:666px; }
+		#stat-wrapper { background-color: #FFFFFF;}
 		#stat-articles article section p img {	
 			border: 1px solid #EEE;
 			background-color: #FFF;
+			margin-bottom: 10px;
 			padding: 4px;
-			max-width: 640px;
+			max-width: 500px;
 			height: auto;
 			vertical-align: top;
 		}
+		#stat-articles article header h1 {
+			font: normal 30px/40px Georgia, serif;
+			margin-bottom: 15px;
+		}		
+		#stat-articles article header time {
+			color: #989592;
+			font: italic 14px/22px Helvetica, sans-serif;
+			margin-bottom: 15px;
+			margin-top: -20px !important;
+		}
 		#stat-sidebar {
-			width: 250px;
+			width: 260px;
 			padding: 30px 5px 40px;
 		}
-		
+		#stat-bottom {
+			clear: both;
+			font: normal 16px/22px Georgia, serif !important;
+			color: #989592;
+			border-top: 1px solid #EEE;
+			padding: 40px 0 30px;
+			text-align: left;
+		}
+		#stat-bottom a {
+			font: normal 16px/22px Georgia, serif !important;
+			color: #989592;
+		}	
+		#stat-bottom a:focus,
+		#stat-bottom a:hover {
+			color: #323130;
+			background-color: #FFF;
+			border-bottom: 1px solid #E4E0DA;
+		}	
 		.right {
 			float: right;
 			margin: 0 0 20px 20px;
@@ -83,6 +109,9 @@
 	</style>
 <meta http-equiv="x-dns-prefetch-control" content="off"></head>
 <body>
+
+<div id="stat-wrapper-1"></div>
+<div id="stat-wrapper-2"></div>
 
 <div id="stat-wrapper">
 
@@ -148,7 +177,10 @@
 
 	
 {{ content }}	
-	
+
+<nav id="stat-bottom">
+	<a href="/">Home</a> | <a href="/about.html">About</a> | <a href="/archives.html">Archives</a>
+</nav>
 
 </div><!-- END#stat-wrapper -->
 
