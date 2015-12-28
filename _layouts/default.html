@@ -119,23 +119,25 @@
 	<hgroup>
 		
 		<h1><a href="/" title="{{ site.title }}">{{ site.title }}</a></h1>
-		<h2>Pursue something so important that even if you fail, the world is better off with you having tried.</h2>
+		<!--<h2>Pursue something so important that even if you fail, the world is better off with you having tried.</h2>-->
 	</hgroup>
 </header><!-- END#stat-header -->
 
 <aside id="stat-sidebar">
 	
 	<section id="stat-about">
-		<img class="stat-tumblr-avatar" src="/assets/images/charles-yuan-80x80.png" alt="Untitled">
-		<h2>About</h2>
-		<div class="stat-about-content"><a href="http://about.me/beta4better">Charles Yuan</a></div>
+		<img class="stat-tumblr-avatar" src="/assets/images/charles-yuan-80x80.png" alt="">
+		<!--<h2>About</h2>-->
+		<!--<div class="stat-about-content"><a href="http://about.me/beta4better">Charles Yuan</a></div>-->
+		<h2>Charles Yuan</h2>
+
 		<div class="stat-about-extras">
-			Follow me <a href="https://twitter.com/#!/beta4better">@beta4better</a>.
+			<!--Follow me <a href="https://twitter.com/#!/beta4better">@beta4better</a>.-->
+			If you find some words usefull, you can leave a comment or send me a <a href="mailto:beta4better@gmail.com">mail</a>.
 			
 		</div>
 		<div class="stat-clear"></div>
 	</section>
-	
 	
 	<!--
 	<section id="stat-search" class="stat-boxed">
@@ -145,18 +147,22 @@
 		</form>
 	</section>
 	-->
-	<!--<section id="stat-more">
+
+	<section id="stat-more">
 		
 		
 		<nav class="stat-blog-tools">
-			<h2>Blog Tools</h2>
+			<h2>Recent posts</h2>
 			<ul>
-				<li><a rel="archives" href="http://safe.tumblr.com/archive">Archive</a></li>
-				<li><a rel="alternate" type="application/rss+xml" href="http://demo.tumblr.com/rss">RSS</a></li>
+				{% for post in site.posts limit:10 %}
+				<li>- <a rel="archives" href="{{ post.url }}">{{ post.title }}</a></li>
+				<!--<li><a rel="archives" href="http://safe.tumblr.com/archive">Archive</a></li>
+				<li><a rel="alternate" type="application/rss+xml" href="http://demo.tumblr.com/rss">RSS</a></li>-->
+				{% endfor %}
 			</ul>
 		</nav>
 		
-	</section>-->
+	</section>
 	<section id="stat-more">
 	<script type="text/javascript"><!--
 	google_ad_client = "ca-pub-0878077987353821";
