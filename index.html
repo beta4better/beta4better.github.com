@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+
+<section id="stat-articles">
+	
+
+	{% for post in site.posts limit:10 %}
+
+	<article class="stat-text">
+		<header>
+			{% if post.title %}<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>{% endif %}
+			<time datetime="{{ post.date }}" pubdate="">{{ post.date }}</time>
+		</header>
+		
+		<section>
+			{{ post.content }}
+		</section>
+		<div class="stat-clear"></div>
+		
+	</article>
+
+	{% endfor %}
+	
+</section><!-- END#stat-articles -->
+
+{% if paginate %}
+	<nav id="stat-navigation">
+		<ul>
+			<li class="stat-nav-left">
+			{% if paginator.previous_page %}
+				<a href="/page{{paginator.previous_page}}">Previous page</a>
+			{% else %}
+				<a href="/">Home</a>
+			{% endif %}
+			</li>
+			<li class="stat-nav-right">
+			{% if paginator.next_page %}
+				<a href="/page{{paginator.next_page}}" class="next ">Next page</a>
+			{% endif %}
+			</li>
+			<li class="stat-nav-center">Page: {{paginator.page}} of {{paginator.total_pages}}</li>
+		</ul>
+	</nav><!-- END#stat-navigation -->
+{% endif %}

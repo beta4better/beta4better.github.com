@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+
+<section id="stat-articles">
+	
+	<article class="stat-text" id="post-232">
+		<header>
+			{% if page.title %} <h1>{{ page.title }}</h1> {% endif %}			
+			<time datetime="{{ page.date }}" pubdate="">{{ page.date }}</time>
+		</header>
+		<section>
+			{{ content }}
+		</section>
+		<div class="stat-clear"></div>
+		
+		{% if page.tags[0] %}
+		<p class="stat-tumblr-tags">
+
+			Tag with: {% for tag in page.tags %}{{tag}}<span></span>{% endfor %}
+
+		</p>
+		{% endif %}
+
+		<div>
+		<script type="text/javascript"><!--
+		google_ad_client = "ca-pub-0878077987353821";
+		/* beta4better.me */
+		google_ad_slot = "2621635637";
+		google_ad_width = 468;
+		google_ad_height = 60;
+		//-->
+		</script>
+		<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>		
+		</div>
+	</article>
+	
+</section><!-- END#stat-articles -->

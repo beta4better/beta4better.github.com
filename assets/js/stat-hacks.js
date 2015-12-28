@@ -1,0 +1,10 @@
+/*
+	Widescreen YouTube Embeds by Matthew Buchanan, Hayden Hunter & Thijs Jacobs
+	http://matthewbuchanan.name/451892574
+	http://blog.haydenhunter.me
+	http://thijsjacobs.com
+
+	Released under a Creative Commons attribution license:
+	http://creativecommons.org/licenses/by/3.0/nz/
+*/
+$(function(){$("object").each(function(){if($(this).find("embed[src^='http://www.youtube.com']").length>0){var parent=$(this).parent();parent.css("visibility","hidden");var youtubeCode=parent.html();var params="";if(youtubeCode.toLowerCase().indexOf("<param")==-1){$("param",this).each(function(){params+=$(this).get(0).outerHTML})}var oldOpts=/rel=0/g;var newOpts="rel=0&amp;color1=0xFFFFFF&amp;color2=0xFFFFFF";youtubeCode=youtubeCode.replace(oldOpts,newOpts);if(params!=""){params=params.replace(oldOpts,newOpts);youtubeCode=youtubeCode.replace(/<embed/i,params+"<embed")}var youtubeIDParam=$(this).find("embed").attr("src");var youtubeIDPattern=/\/v\/([0-9A-Za-z-_]*)/;var youtubeID=youtubeIDParam.match(youtubeIDPattern);var youtubeHeight=Math.floor(parent.find("object").width()*0.75+25);var youtubeHeightWide=Math.floor(parent.find("object").width()*0.5625+25);$.ajax({url:"http://gdata.youtube.com/feeds/api/videos/"+youtubeID[1]+"?v=2&alt=json-in-script",dataType:"jsonp",timeout:5000,success:function(data){oldOpts=/height="?([0-9]*)"?/g;if(data.entry.media$group.yt$aspectRatio!=null){newOpts='height="'+youtubeHeightWide+'"'}else{newOpts='height="'+youtubeHeight+'"'}youtubeCode=youtubeCode.replace(oldOpts,newOpts);if(params!=""){params=params.replace(oldOpts,newOpts);youtubeCode=youtubeCode.replace(/<embed/i,params+"<embed")}parent.html(youtubeCode)}});parent.html(youtubeCode).css("visibility","visible")}})});$(document).ready(function(){$('a[rel="external"]').click(function(){window.open($(this).attr('href'));return false});$("#stat-wrapper-1,#stat-wrapper-2").css("height",$("#stat-wrapper").innerHeight())});
