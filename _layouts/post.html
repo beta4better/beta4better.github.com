@@ -23,19 +23,47 @@ layout: default
 		</p>
 		{% endif %}
 
+		<div class="stat-clear"></div>
+
 		<div>
-		<script type="text/javascript"><!--
-		google_ad_client = "ca-pub-0878077987353821";
-		/* beta4better.me */
-		google_ad_slot = "2621635637";
-		google_ad_width = 468;
-		google_ad_height = 60;
-		//-->
-		</script>
-		<script type="text/javascript"
-		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-		</script>		
+			<script type="text/javascript"><!--
+			google_ad_client = "ca-pub-0878077987353821";
+			/* beta4better.me */
+			google_ad_slot = "2621635637";
+			google_ad_width = 468;
+			google_ad_height = 60;
+			//-->
+			</script>
+			<script type="text/javascript"
+			src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+			</script>		
 		</div>
+
+		<div class="stat-clear"></div>
+
+		<div id="disqus_thread"></div>
+		<script>
+		/**
+		* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+		* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+		*/
+		
+		var disqus_config = function () {
+		this.page.url = page.url; // Replace PAGE_URL with your page's canonical URL variable
+		this.page.identifier = page.id; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+		};
+		
+		(function() { // DON'T EDIT BELOW THIS LINE
+		var d = document, s = d.createElement('script');
+
+		s.src = '//beta4better.disqus.com/embed.js';
+
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+		})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
 	</article>
 	
 </section><!-- END#stat-articles -->
