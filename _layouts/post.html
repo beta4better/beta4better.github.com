@@ -1,27 +1,8 @@
 ---
 layout: default
 ---
-
-
-
 	
-	<article class="stat-text" id="post-232">
-		<header>
-			{% if page.title %} <h1>{{ page.title }}</h1> {% endif %}			
-			<time datetime="{{ page.date }}" pubdate="">{{ page.date }}</time>
-		</header>
-		<section>
-			{{ content }}
-		</section>
-		<div class="stat-clear"></div>
-		
-		{% if page.tags[0] %}
-		<p class="stat-tumblr-tags">
-
-			Tag with: {% for tag in page.tags %}{{tag}}<span></span>{% endfor %}
-
-		</p>
-		{% endif %}
+		{{ content }}
 
 		<div class="stat-clear"></div>
 
@@ -47,7 +28,3 @@ layout: default
 		})();
 		</script>
 		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-
-	</article>
-
-	

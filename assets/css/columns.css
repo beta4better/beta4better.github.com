@@ -61,6 +61,7 @@ body {
   margin-left: 0px;
   padding-left: 19px;
   border-left: 1px solid #eee;
+  min-height: 100%;
 }
 
 .content .span10 p {

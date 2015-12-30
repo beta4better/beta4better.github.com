@@ -43,14 +43,14 @@
 
     <div class="container" id="top">
       <div class="content">
-		{% if post.title %}
+	{% if page.title %}
         <div class="page-header">
           <h1>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-			<small><time datetime="{{ post.date }}" pubdate="">{{ post.date }}</time></small>
+            <a href="{{ post.url }}">{{ page.title }}</a>
+	    <small><time datetime="{{ page.date }}" pubdate="">{{ page.date }}</time></small>
           </h1>
         </div>
-		{% endif %}
+	{% endif %}
 
         <div class="row">
           <div class="span10">
