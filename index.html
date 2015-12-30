@@ -3,9 +3,6 @@ layout: default
 ---
 
 
-<section id="stat-articles">
-	
-
 	{% for post in site.posts limit:10 %}
 
 	<article class="stat-text">
@@ -23,7 +20,6 @@ layout: default
 
 	{% endfor %}
 	
-</section><!-- END#stat-articles -->
 
 {% if paginate %}
 	<nav id="stat-navigation">
