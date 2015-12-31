@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "About Me"
+title: "About"
 date: 2012-04-04 16:40
 ---
 
