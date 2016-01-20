@@ -1,3 +1,4 @@
 _site/*
 public_html/*
 .DS_Store
+*.md~
