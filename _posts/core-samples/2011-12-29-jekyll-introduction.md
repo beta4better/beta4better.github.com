@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 layout: page
+=======
+layout: post
+>>>>>>> beta
 category : lessons
 tagline: "Supporting tagline"
 tags : [intro, beginner, jekyll, tutorial]
