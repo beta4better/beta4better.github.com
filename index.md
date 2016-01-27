@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: Keep going, don't stop!
+tagline: Restart from 2016.
 ---
 {% include JB/setup %}
 
