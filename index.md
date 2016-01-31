@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Time will tell!
+layout: default
+title: Yuan
 tagline: rebuild from 2016
 ---
 {% include JB/setup %}
@@ -11,8 +11,12 @@ This is Charles, here is my latest web page served on [Github](http://www.github
 
 Here's a list for the recent posts.
 
-<ul class="posts">
-  {% for post in site.posts limit:10 %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+  <div class="row">
+    {% for post in site.posts limit:9 %}
+    <div class="col-xs-6 col-lg-4">
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.excerpt }} </p>
+      <p><a class="btn btn-default" href="{{ BASE_PATH }}{{ post.url }}" role="button">View details &raquo;</a></p>
+    </div><!--/.col-xs-6.col-lg-4-->
+    {% endfor %}
+  </div><!--/row-->

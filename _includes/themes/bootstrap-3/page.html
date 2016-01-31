@@ -1,9 +1,10 @@
-<div class="page-header">
-  <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
-</div>
-
-<div class="row">
-  <div class="col-xs-12">
-    {{ content }}
-  </div>
-</div>
+          <div class="jumbotron">
+            <h1>Hello, world!</h1>
+            <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 col-lg-4">
+              <h2>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h2>
+              {{ content }}
+            </div><!--/.col-xs-6.col-lg-4-->
+          </div><!--/row-->
