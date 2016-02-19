@@ -1,7 +1,7 @@
 ---
 layout: post
-categories : [年, 春节]
-tags : [年, 春节]
+categories : []
+tags : []
 ---
 
 **新年**，中国的传统节日，现在又叫春节，每年一度，热热闹闹，举家团聚。
