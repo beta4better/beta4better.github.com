@@ -34,16 +34,16 @@ h6, .h6 {
   color: #333;
 }
 
-/*
- * Override Bootstrap's default container.
- */
-
-@media (min-width: 1200px) {
-  .container {
-    width: 970px;
-  }
+/*For Archive page*/
+.archive-year {
+  margin-top: 30px;
 }
-
+.archive-month {
+  margin-left: 30px;
+}
+.archive-post{
+  margin-left: 60px;
+}
 
 /*
  * Masthead for nav
@@ -170,8 +170,8 @@ h6, .h6 {
 
 .blog-footer {
   padding: 40px 0;
-  /*color: #999;*/
-  text-align: center;
+  color: #999;
+  text-align: left;
   background-color: #f9f9f9;
   border-top: 1px solid #e5e5e5;
 }
