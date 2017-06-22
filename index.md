@@ -19,6 +19,9 @@ tagline: rebuild from 2016
     </div><!-- /.blog-post --><!--/.col-xs-6.col-lg-4-->
   {% endfor %}
 
+    <div class="col-xs-6 col-lg-4 blog-post">
+      <h2 class="blog-post-title"><a href="{{ https://m.do.co/c/bd4cb48cf8aa }}">{{ Digital Ocean Referral }}</a></h2>
+    </div><!-- /.blog-post --><!--/.col-xs-6.col-lg-4-->
 </div><!--/row-->
 
 {% include JB/setup %}
