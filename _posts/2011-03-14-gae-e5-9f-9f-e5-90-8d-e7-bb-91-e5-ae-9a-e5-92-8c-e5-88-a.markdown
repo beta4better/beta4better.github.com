@@ -1,0 +1,7 @@
+---
+layout: post
+title: gaeYu Ming Bang Ding He Shan Chu
+date: '2011-03-14 19:27:00'
+---
+
+<p>发现一个奇怪的问题，在给gae绑域名和删除域名的时候需要重复才做4、5次才可以，莫名其妙。</p>

@@ -1,0 +1,9 @@
+---
+layout: post
+title: iTunes 10
+date: '2014-11-26 16:15:51'
+---
+
+http://support.apple.com/kb/PH999?viewlocale=zh_CN
+
+http://support.apple.com/zh-cn/HT2905

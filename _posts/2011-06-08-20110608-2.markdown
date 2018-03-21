@@ -1,0 +1,15 @@
+---
+layout: post
+title: '20110608'
+date: '2011-06-08 18:35:00'
+tags:
+- google
+---
+
+<p>广告被google停止投放了，看了看google给出的文档，在<a href="http://www.google.com/support/forum/p/adsense/thread?tid=598c6e58817c93ac&amp;hl=zh-CN">论坛</a>里提问了一下如何申诉，有好心人给了个<a href="https://www.google.com/adsense/support/bin/request.py?contact_type=policy_violation_appeal">链接</a>，刚刚提交了申诉。</p>
+
+<p>同时把评论设成了审核后才可以显示，到后台数据库里把所有的评论全都删掉了。</p>
+
+<p>我的那个天啊，数量惊人啊，半年的时间差不多有6K多条，这人真是有毅力。</p>
+
+<p>希望google能尽快给处理吧，倒不是为了什么广告能赚钱，感觉放着google的广告还是听不错的。</p>

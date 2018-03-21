@@ -1,0 +1,13 @@
+---
+layout: post
+title: Xian Shi Mian Fei De GAEFan Xiang Dai Li Fu Wu
+date: '2011-03-23 19:05:00'
+---
+
+<p>闲来无事，利用闲置的VPS给需要的人提供免费的GAE反向代理服务，此服务初步预计持续到2011年7月20日左右。到时再寻其他处理方法。 </p>
+
+<p>暂时仅发布在如下两个地方，如有需要请访问下面的地址：</p>
+
+<ul><li><a href="http://www.v2ex.com/t/10117#reply11">http://www.v2ex.com/t/10117#reply11</a></li>
+<li><a href="http://www.fx7fx.com/">http://www.fx7fx.com/</a></li>
+</ul><p>截止到23号11点已经有4人参与。</p>

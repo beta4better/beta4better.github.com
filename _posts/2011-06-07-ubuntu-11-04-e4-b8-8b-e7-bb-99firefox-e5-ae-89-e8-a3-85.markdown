@@ -1,0 +1,19 @@
+---
+layout: post
+title: Ubuntu 11.04 Xia Gei FirefoxAn Zhuang FlashCha Jian
+date: '2011-06-07 20:25:00'
+---
+
+<p>在Ubuntu下安装Flash插件貌似相当方便了，在Firefox下打开Adobe Flash Player的网站：</p>
+
+<p><a href="http://get.adobe.com/flashplayer/">http://get.adobe.com/flashplayer/</a></p>
+
+<p>在下拉框里悬在APT for Ubuntu</p>
+
+<p>再点击Download Now</p>
+
+<p>然后会直接打开Ubuntu Software Center</p>
+
+<p>点击Install</p>
+
+<p>安装完成后重新启动Firefox就可一播放视频了。</p>

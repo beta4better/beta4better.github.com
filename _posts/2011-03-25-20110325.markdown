@@ -1,0 +1,14 @@
+---
+layout: post
+title: '20110325'
+date: '2011-03-25 18:17:00'
+---
+
+<p>在github上找到的几个不错的app，记下来：</p>
+
+<ul><li><a href="https://github.com/epronk/python-blog-content">https://github.com/epronk/python-blog-content</a></li>
+<li><a href="https://github.com/anotherjesse/fobliki">https://github.com/anotherjesse/fobliki</a></li>
+<li><a href="https://github.com/bgolub/blog">https://github.com/bgolub/blog</a></li>
+<li><a href="https://github.com/ametaireau/pelican">https://github.com/ametaireau/pelican</a></li>
+<li><a href="https://github.com/realbasic/python-blog-system">https://github.com/realbasic/python-blog-system</a></li>
+</ul>

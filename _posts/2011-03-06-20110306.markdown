@@ -1,0 +1,11 @@
+---
+layout: post
+title: '20110306'
+date: '2011-03-06 20:49:00'
+---
+
+<p>找到了另一种nginx反向代理gae的方法，使用cname解析。这次可以使用google的账户登录管理gae了。</p>
+
+<p>下一步要做的就是将裸域重定向到www。如果你的服务器是nginx，那么请看<a href="http://www.beta4better.me/naked-domain-redirect-to-www">这里</a>。</p>
+
+<p>但是还遇到一个问题就是，一不小心字gae中将域名绑定错了，看到有delete的链接，但是点击没有反应，正在寻找解决方法。</p>

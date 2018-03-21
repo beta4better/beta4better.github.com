@@ -1,0 +1,21 @@
+---
+layout: post
+title: screen
+date: '2015-09-28 09:32:48'
+tags:
+- screen
+- gentoo
+---
+
+An even briefer overview of some commands you may find useful to get you started: `Ctrl` `a` is the escape character for screen, which you type and then follow up with the rest of the command if necessary; so for example `Ctrl` `a` then `?` to get help, `Ctrl` `a` then `d` to detach the current session (disconnect from it from your ssh console, leaving any active commands to run in the background), `Ctrl` `a` then c to create a new 'window', `Ctrl` `a` then `"` (that's a double quote) to list the current windows, `Ctrl` `a` then n to go to the next window and `Ctrl` `a` then `p` to go to the previous window. If you disconnect, you can reconnect to your session from a console (either when logged in via ssh, or directly on the machine's console itself) using
+
+    root #screen -D -R
+
+If you get the follow error on Gentoo:
+
+    localhost ~ # screen
+    -bash: screen: command not found
+
+You can use the follow command to install:
+
+    localhost ~ # emerge -av app-misc/screen

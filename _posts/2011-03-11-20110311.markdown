@@ -1,0 +1,7 @@
+---
+layout: post
+title: '20110311'
+date: '2011-03-11 20:59:00'
+---
+
+<p>虽然不懂的ruby，也没学过rails，但是经过这两天的努力终于在Debian上配置好了Ruby on Rails，用Radiant搭建了一个<a href="http://blog.beta4better.me">blog</a>，好兴奋。</p>

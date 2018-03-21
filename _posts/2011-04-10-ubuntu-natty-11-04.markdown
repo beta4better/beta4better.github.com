@@ -1,0 +1,9 @@
+---
+layout: post
+title: Ubuntu Natty 11.04
+date: '2011-04-10 19:04:00'
+tags:
+- ubuntu
+---
+
+<p>I get to know ubuntu from 2006, while I was a still a student used ubuntu for a while. At that time I tried many dist of linux, such as Debian, RedHat, Fedora, CentOS SUSE, Gentoo, even LFS. But finally turn to Debian. Now I&#8217;m coming back to Ubuntu on my laptop. Hope everything goes well.</p>

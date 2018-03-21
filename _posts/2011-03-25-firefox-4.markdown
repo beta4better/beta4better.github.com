@@ -1,0 +1,13 @@
+---
+layout: post
+title: Firefox 4
+date: '2011-03-25 19:23:00'
+---
+
+<p>今天更新了Firefox4，变化好大，默认界面感觉有些Opera的风格，在Win7下默认的中文字体是中文雅黑，感觉怪怪的。</p>
+
+<p>与3相比变化实在是大。竟然有了同步功能！感觉几款浏览器（Opera、Firefox、Chrome）的样子是越来越像了。Opera下的审查元素功能Chrome也引进来了。</p>
+
+<p>上一张Firefox4的网站截图：</p>
+
+<p><img src="http://c463143.r43.cf2.rackcdn.com/firefox4.gif"/></p>

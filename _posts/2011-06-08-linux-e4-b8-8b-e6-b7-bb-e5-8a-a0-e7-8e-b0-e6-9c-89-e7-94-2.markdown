@@ -1,0 +1,12 @@
+---
+layout: post
+title: LinuxXia Tian Jia Xian You Yong Hu Dao Yi Ge Yi Cun Zai De Zu
+date: '2011-06-08 19:12:00'
+tags:
+- usermod
+---
+
+<p>会有这个需要是因为迁移VirtualBox的虚拟主机后系统提示当前用户不在某某组，设备无法正常使用，需要添加现在的用户到某个组里去，需要用到这个命令：</p>
+
+<pre><code>usermod -a -G username needed-group
+</code></pre>

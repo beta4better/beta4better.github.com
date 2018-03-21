@@ -1,0 +1,32 @@
+---
+layout: post
+title: '20110328'
+date: '2011-03-28 17:29:00'
+---
+
+<p>最近形成恶性循环论，每每到晚上会很精神，白天就无精打采的。工作没什么激情。</p>
+
+<p>有时候我在想工作是为了什么？</p>
+
+<p>毕业后便来到了这家公司，已经四年了，期间公司迁到过北京半年，之后又回来了。</p>
+
+<p>工作是为了钱嘛？在这家公司工资少的可怜。是因为自己的爱好吗？现在的工作与自己所学毫无关系，虽然也是一家跟电脑相关的公司。</p>
+
+<p>想来想去自己就转到圈子里去了。</p>
+
+<p>是时候做一些改变了，虽然这第一步迈出去可能会比较痛苦，但是应该趁着还有理想，还有激情的时候去做一些事情，不至于年老了回首往事留下来的都是不甘心。</p>
+
+<p>思考了几天终于将moinmoin配置好了，前端是nginx，后端是uwsgi。不是DesktopEdition，而是正常的版本，支持都语言哦。这里访问：<a href="http://wiki.beta4better.org/">via</a></p>
+
+<p>期间参考了一些资料，记录如下：</p>
+
+<ul><li><a href="http://library.linode.com/web-servers/nginx/python-uwsgi/debian-6-squeeze">http://library.linode.com/web-servers/nginx/python-uwsgi/debian-6-squeeze</a></li>
+<li><a href="http://moinmo.in/HowTo/UbuntuQuick">http://moinmo.in/HowTo/UbuntuQuick</a></li>
+<li><a href="http://projects.unbit.it/uwsgi/wiki/Doc">http://projects.unbit.it/uwsgi/wiki/Doc</a></li>
+<li><a href="http://projects.unbit.it/uwsgi/wiki/Example">http://projects.unbit.it/uwsgi/wiki/Example</a></li>
+<li><a href="http://obmem.info/?p=703">http://obmem.info/?p=703</a></li>
+<li><a href="http://blog.khsing.net/2010/10/run-moinmoin-under-uwsgi-and-n.html">http://blog.khsing.net/2010/10/run-moinmoin-under-uwsgi-and-n.html</a></li>
+<li><a href="http://apt-blog.net/moinmoin-on-nginx-via-fastcgi-and-uwgi">http://apt-blog.net/moinmoin-on-nginx-via-fastcgi-and-uwgi</a></li>
+<li><a href="http://farter.users.sourceforge.net/blog/2010/12/12/installing-osqa-with-nginx-uwsgi-and-sqlite3-on-ubuntu-lucid-10-04-minimal/">http://farter.users.sourceforge.net/blog/2010/12/12/installing-osqa-with-nginx-uwsgi-and-sqlite3-on-ubuntu-lucid-10-04-minimal/</a></li>
+<li><a href="http://farter.users.sourceforge.net/blog/2011/02/11/running-osqa-with-nginx-and-uwsgi-virtualhosting-mode-with-dynamicapps/">http://farter.users.sourceforge.net/blog/2011/02/11/running-osqa-with-nginx-and-uwsgi-virtualhosting-mode-with-dynamicapps/</a></li>
+</ul><p>下一步看一下moinmoin的语法，一些琐碎的东西就会先记录到wiki上，整理好了再放到这里。</p>

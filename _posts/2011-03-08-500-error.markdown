@@ -1,0 +1,13 @@
+---
+layout: post
+title: 500 ERROR
+date: '2011-03-08 21:14:00'
+---
+
+<p>不知道怎么了今天部分gae程序一直出现500错误，无法正常访问：</p>
+
+<p>Error: Server Error</p>
+
+<p>The server encountered an error and could not complete your request.</p>
+
+<p>If the problem persists, please report your problem and mention this error message and the query that caused it.</p>

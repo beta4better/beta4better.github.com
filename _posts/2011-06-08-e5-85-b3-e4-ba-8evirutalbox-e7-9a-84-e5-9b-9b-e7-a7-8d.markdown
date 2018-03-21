@@ -1,0 +1,30 @@
+---
+layout: post
+title: Guan Yu VirutalBoxDe Si Chong Wang Luo She Zhi
+date: '2011-06-08 19:06:00'
+tags:
+- virtualbox
+- eth
+---
+
+<ul><li>NAT：网络地址转换（Network Address Translation），应该是虚拟机要将数据包交给主机，再由主机的的网卡发出去</li>
+<li>Birdged Network：桥接，这种方式，就是虚拟机与主机平等平坐，两个相当于独立机子，外面的内网里也可以访问我的虚拟机</li>
+<li>Internal Network：内部网络（可以是虚拟机与虚拟机之间）</li>
+<li>Host-Only：只与主机通信</li>
+</ul><p>第一种、第二种、第四种我都尝试过了，确实如上所说。</p>
+
+<p>实在家里实验的，有路由器，给虚拟机开三个网卡就可以了，如果不进行第二种设置，除了主机外其他的电脑访问不了虚拟机。</p>
+
+<p>在VirtualBox里设置好了后还在要配置文件：/etc/network/interfaces里把相应的网卡都添加进去：</p>
+
+<pre><code>allow-hotplug eth0
+iface eth0 inet dhcp
+
+allow-hotplug eth1
+iface eth1 inet dhcp
+
+allow-hotplug eth2
+iface eth2 inet dhcp
+</code></pre>
+
+<p>图省事全部用的DHCP。</p>

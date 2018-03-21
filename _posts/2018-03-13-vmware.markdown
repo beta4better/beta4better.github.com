@@ -1,0 +1,38 @@
+---
+layout: post
+title: VMware Tools for FreeBSD 11 Guest
+date: '2018-03-13 08:47:08'
+tags:
+- vmware
+- freebsd-2
+---
+
+虚拟机软件： VMware Workstation 14 Player
+宿主系统： Windows 7 Enterprise
+Guest 系统： FreeBSD 11
+
+如果不用x11的话 open-vm-tools-nox11，用图形桌面的话就安装 open-vm-tools。安装成功后会在虚拟机窗口看到一个提示：
+
+`VMware memory control driver initialized`
+
+安装命令，普通用户：
+
+`sudo pkg install open-vm-tools-nox11`
+
+root 用户：
+
+`pkg install open-vm-tools-nox11`
+
+sudo 需要额外在 root 用户下先安装：
+
+`pkg install sudo`
+
+然后用 visudo 命令将下面这一行的注释去掉：
+
+`%wheel ALL=(ALL) NOPASSWD: ALL`
+
+这样在 wheel 用户组里的用户就可以不用输密码执行 sudo 命令了。如果需要输密码执行 sudo 命令就只把这一行注释掉：
+
+`# %wheel ALL=(ALL) ALL`
+
+如果安装了 sudo 之后执行 `visudo` 命令找不到，需要执行 `rehash` 刷新下。

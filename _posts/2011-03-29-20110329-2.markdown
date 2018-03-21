@@ -1,0 +1,19 @@
+---
+layout: post
+title: '20110329'
+date: '2011-03-29 18:58:00'
+---
+
+<p>今天简单的修改了一下页面的布局，左边栏添加了<a href="http://www.osqa.net/">OSQA</a>和<a href="http://moinmo.in/">MoinMoin</a>的链接。我用这两个软件搭建了两个应用，一个用来做<a href="http://www.beta4better.org/">QA系统</a>，大家可以到那里去浏览，这个网站仅仅是用来写点东西，没有提供评论功能。另一个用来做<a href="http://wiki.beta4better.org/">Wiki</a>用，平时记录一些琐碎的东西。</p>
+
+<p>同时在V2EX上看到一个主题在讨论<a href="http://www.v2ex.com/t/10611">记事解决方案</a>，看到了几个不错的应用。于是去注册了，分别将自己的链接放到了左侧Sidebar的位置。</p>
+
+<ul><li><a href="http://jottit.com/">jottit</a></li>
+<li><a href="http://pen.io">pen.in</a></li>
+<li><a href="http://wrttn.me/">wrttn.me</a></li>
+</ul><p>Footer位置添加了用到的一些加速技术。</p>
+
+<ul><li><a href="https://www.cloudflare.com/">CloudFlare</a></li>
+<li><a href="http://www.quickweb.co.nz/">QuickWeb</a></li>
+<li><a href="http://nginx.org/">Nginx</a></li>
+</ul>

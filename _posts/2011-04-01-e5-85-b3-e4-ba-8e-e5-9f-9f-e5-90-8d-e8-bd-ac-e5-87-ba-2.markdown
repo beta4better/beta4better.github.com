@@ -1,0 +1,7 @@
+---
+layout: post
+title: Guan Yu Yu Ming Zhuan Chu
+date: '2011-04-01 19:22:00'
+---
+
+<p>今天正式将域名beta4better.org从万网转移到了Godaddy，整个过程还算顺利就是花了不少时间。整个过程找个时间再详细写一下。一定要盯着万网的人给你提供域名密码就好。</p>

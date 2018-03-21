@@ -1,0 +1,12 @@
+---
+layout: post
+title: Bei Jing /Wen Li
+date: '2011-04-04 06:56:00'
+---
+
+<ul><li><a href="http://www.patternhead.com/">http://www.patternhead.com/</a></li>
+<li><a href="http://patterns.ava7.com/">http://patterns.ava7.com/</a></li>
+<li><a href="http://www.brusheezy.com/">http://www.brusheezy.com/</a></li>
+<li><a href="http://pattern8.com/">http://pattern8.com/</a></li>
+<li><a href="http://www.repeatxrepeaty.com/">http://www.repeatxrepeaty.com/</a></li>
+</ul>
