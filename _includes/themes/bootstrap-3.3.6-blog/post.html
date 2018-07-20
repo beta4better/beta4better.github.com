@@ -20,4 +20,7 @@
           </ul>
 
           <hr>
-          {% include JB/comments %}
+
+{% if jekyll.environment == "production" %}
+    {% include JB/comments %}
+{% endif %}

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Weblog for Charles
+title: Charles' Lab
 tagline: rebuild from 2016
 ---
 

@@ -32,12 +32,12 @@ Stuxnet 蠕虫病毒可能是有史以来最复杂的软件。我们不知道 St
 
 工厂的管理者根本找不到原因，离心机的数据是正常的。你永远不会知道，所有这些问题都是由一种计算机蠕虫引起的。这是一种历史上最狡猾和最聪明的计算机蠕虫，它由一些拥有无限资金和无限资源的令人难以置信的秘密团队编写，并且设计时只考虑一个目的：偷偷摧毁某个国家的核弹计划，并且不被发现。
 
-### 资源分享
 
-#### [Python - 100天从新手到大师](https://github.com/jackfrued/Python-100-Days)
+
+### 四、资源分享 - [Python - 100天从新手到大师](https://github.com/jackfrued/Python-100-Days)
 
 Python 是一直以来我想学的一门语言，不过每次都是看完基本语法就放在那里了，没有实践。
 
-#### [JavaScript 算法与数据结构](https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md)
+### 五、资源分享 -  [JavaScript 算法与数据结构](https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md)
 
 这里收集了30多种算法的 JavaScript 实现。

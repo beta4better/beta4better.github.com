@@ -1,16 +1,38 @@
+# For more see: https://jekyllrb.com/docs/configuration/
+source:          ./
+destination:     ./_site
+layouts_dir:     _layouts
+includes_dir:    _includes
+
+timezone:        Asia/Shanghai
+
+include:         [".htaccess"]
+exclude:         [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+keep_files:      [".git", ".svn"]
+encoding:        "utf-8"
+markdown_ext:    "markdown,mkdown,mkdn,mkd,md"
+
+markdown:        kramdown
+highlighter:     rouge
+
+
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
-
-# permalink: /:categories/:year/:month/:day/:title
+# permalink: /:categories/:year/:month/:day/:title:output_ext
 permalink: /:year/:month/:title.html
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-#highlighter: pygments
-highlighter: rouge
+# Set the default layout for the posts.
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "default"
+      author: "Charles Yuan"
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
-#
 title : Charles' Lab
 tagline: If you keep doing it for some years, some years later some one will support you.
 author :
