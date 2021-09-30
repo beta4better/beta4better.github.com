@@ -5,14 +5,6 @@
           </div><!-- /.blog-post -->
 
           <div>
-            {% for post in site.related_posts limit:3 %}
-            <div class="blog-post col-sm-4">
-              <h2 class="blog-post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-              <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> {{ post.date | date_to_long_string }} by <i class="far fa-user"></i> {{ site.author.name }}</p>
-              {{ post.content | strip_html | truncatewords: 33 }}
-            </div>
-            {% endfor %}
-          </div>
 
           <hr>
           <ul class="pagination">
